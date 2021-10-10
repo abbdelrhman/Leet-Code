@@ -13,7 +13,6 @@ class MyQueue {
         if (pushStack.isEmpty() && popStack.isEmpty()) {
             top = x;
         } else if (pushStack.isEmpty() && !popStack.isEmpty()) {
-            top = popStack.peek();
             while (!popStack.isEmpty()) {
                 pushStack.push(popStack.pop());
             }
